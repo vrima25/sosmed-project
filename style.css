@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--bold);
+}
+
+:root{
+    --bold : #702846;
+    --primary : #993551;
+    --middle : #d74e69;
+    --secondary : #ff818d;
+    --light : #ffbcb2;
+}
+
+.container {
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding : 1rem 0 3rem 0 ;
+}
+
+.container > h1 {
+    font-family: "Bebas Neue", sans-serif;
+    text-shadow: 2px 2px var(--light);
+    font-size: 50px;
+}
+
+.container-card {
+    display: flex;
+    gap: 2rem;
+}
+
+.card {
+    border: 2px solid var(--bold);
+    border-radius: 15px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.card > a {
+    text-decoration: none;
+    background-color: var(--light);
+    width: 80%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px var(--light);
+}
+
+.card > a:hover {
+    background-color: var(--middle);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 10px;
+    color: var(--light);
+    box-shadow: 0 0 10px var(--middle);
+    transition: all 0.2s ease-in;
+    height: 40px;
+}
+
